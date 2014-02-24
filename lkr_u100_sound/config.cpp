@@ -2,6 +2,7 @@ class CfgPatches
 {
 	class lkr_u100_sound
 	{
+		units[]={};
 		weapons[]={};
 		magazines[]={};
 		requiredVersion=0.1;

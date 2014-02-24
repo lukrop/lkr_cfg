@@ -10,6 +10,7 @@ class CfgPatches
 	{
 		units[]={};
 		weapons[]={};
+		magazines[]={};
 		requiredVersion=1.0;
 		requiredAddons[]=
 		{
