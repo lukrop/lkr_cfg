@@ -1,9 +1,5 @@
 BI Forums: http://forums.bistudio.com/showthread.php?173658-lukrop-s-customized-configs
 
-lkr_bullet_hits_value
---------------
-Essentially the same as this. I just changed the "coefficent" to 4 instead of 8.
-
 lkr_caf_chech_mas_weps
 --------------
 Gives the east european CAF Aggressors weapons from massis excellent weapon pack.
