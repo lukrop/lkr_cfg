@@ -1,16 +1,21 @@
+/*
+This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. 
+To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send 
+a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+*/
+
 class CfgPatches
 {
 	class lkr_mas_weps_jsrs_ak
 	{
-		requiredaddons[]=
+		units[]={};
+		weapons[]={};
+		requiredVersion=1.0;
+		requiredAddons[]=
 		{
 			"A3_Weapons_F",
 			"mas_weapons"
 		};
-		requiredversion=1;
-		units[]={};
-		weapons[]={};
-		magazines[]={};
 	};
 };
 class Mode_SemiAuto;
@@ -18,17 +23,9 @@ class Mode_Burst;
 class Mode_FullAuto;
 class CfgWeapons
 {
-	class Rifle;
-	class Rifle_Base_F: Rifle{};
-	class UGL_F;
-	class arifle_MX_Base_F;
-	class arifle_MX_F;
 	class srifle_EBR_F;
-	class hgun_P07_F;
 	class LMG_Mk200_F;
-	class LMG_Zafir_F;
 	class arifle_Katiba_F;
-	class srifle_LRR_F;
 	class srifle_GM6_F;
 	class arifle_mas_ak_74m: arifle_Katiba_F
 	{

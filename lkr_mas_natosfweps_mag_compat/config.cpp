@@ -1,16 +1,21 @@
+/*
+This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. 
+To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send 
+a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+*/
+
 class CfgPatches
 {
 	class lkr_mas_natosfweps_mag_compat
 	{
-		requiredaddons[]=
+		units[]={};
+		weapons[]={};
+		requiredVersion=1.0;
+		requiredAddons[]=
 		{
 			"A3_Weapons_F",
 			"mas_weapons"
 		};
-		requiredversion=1;
-		units[]={};
-		weapons[]={};
-		magazines[]={};
 	};
 };
 class CfgWeapons

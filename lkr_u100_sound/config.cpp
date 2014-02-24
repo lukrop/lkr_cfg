@@ -2,14 +2,13 @@ class CfgPatches
 {
 	class lkr_u100_sound
 	{
-		requiredaddons[]=
+		weapons[]={};
+		magazines[]={};
+		requiredVersion=0.1;
+		requiredAddons[]=
 		{
 			"Ej_u100"
 		};
-		requiredversion=0.1;
-		units[]={};
-		weapons[]={};
-		magazines[]={};
 	};
 };
 class Mode_SemiAuto;

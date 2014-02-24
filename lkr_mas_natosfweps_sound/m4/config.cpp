@@ -1,16 +1,21 @@
+/*
+This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. 
+To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send 
+a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+*/
+
 class CfgPatches
 {
 	class lkr_mas_weps_jsrs_m4
 	{
-		requiredaddons[]=
+		units[]={};
+		weapons[]={};
+		requiredVersion=1.0;
+		requiredAddons[]=
 		{
 			"A3_Weapons_F",
 			"mas_weapons"
 		};
-		requiredversion=1;
-		units[]={};
-		weapons[]={};
-		magazines[]={};
 	};
 };
 class Mode_SemiAuto;
@@ -18,20 +23,13 @@ class Mode_Burst;
 class Mode_FullAuto;
 class CfgWeapons
 {
-	class Rifle;
-	class Rifle_Base_F: Rifle{};
-	class UGL_F;
-	class arifle_MX_Base_F;
 	class arifle_MX_F;
 	class srifle_EBR_F;
-	class arifle_TRG21_F;
-	class hgun_P07_F;
 	class LMG_Mk200_F;
 	class srifle_LRR_F;
 	class srifle_GM6_F;
-	class LMG_Zafir_F;
 	class SMG_02_F;
-  class arifle_mas_hk416_m203;
+	class arifle_mas_hk416_m203;
 	class arifle_mas_hk416: arifle_MX_F
 	{
 		jsrs_soundeffect = "JSRS2_Distance_Effects_fs2000";
@@ -155,8 +153,10 @@ class CfgWeapons
 	};
 	class arifle_mas_m4_m203: arifle_mas_hk416_gl
 	{
-	jsrs_soundeffect = "JSRS2_Distance_Effects_M4";
-      begin1[]={"\mas_us_rifle\sounds\m4_s1", 1, 1, 130};
+		jsrs_soundeffect = "JSRS2_Distance_Effects_M4";
+		class Single: Mode_SemiAuto {
+			jsrs_soundeffect = "JSRS2_Distance_Effects_M4";
+			begin1[]={"\mas_us_rifle\sounds\m4_s1", 1, 1, 130};
 			begin2[]={"\mas_us_rifle\sounds\m4_s2", 1, 1, 130};
 			begin3[]={"\mas_us_rifle\sounds\m4_s3", 1, 1, 130};
 			begin4[]={"\mas_us_rifle\sounds\m4_s4", 1, 1, 130};
@@ -170,7 +170,7 @@ class CfgWeapons
 			begin4[]={"\mas_us_rifle\sounds\m4_s4", 1, 1, 130};
 			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
-    
+    };
 	class arifle_mas_m16: arifle_mas_hk416
 	{
 		jsrs_soundeffect = "JSRS2_Distance_Effects_M16";
@@ -213,8 +213,7 @@ class CfgWeapons
 	};
 	class srifle_mas_hk417: srifle_EBR_F
 	{
-	jsrs_soundeffect = "JSRS2_Distance_Effects_fs2000";
-    reloadMagazineSound[]={"A3\sounds_f\weapons\reloads\new_ebr", 0.63095701, 1, 35};
+		jsrs_soundeffect = "JSRS2_Distance_Effects_fs2000";
 		class Single: Mode_SemiAuto
 		{
 			begin1[]={"\mas_us_rifle\sounds\m24_s1", 1, 1, 130};
@@ -259,8 +258,6 @@ class CfgWeapons
 	class arifle_mas_mp5: SMG_02_F
 	{
 		jsrs_soundeffect = "JSRS2_Distance_Effects_MP";
-		drySound[]={"\mas_us_rifle\sounds\mp5_dry", 1, 1, 20};
-		reloadMagazineSound[]={"\mas_us_rifle\sounds\mp5_reload", 1, 1, 30};
 		class Single: Mode_SemiAuto
 		{
 			begin1[]={"\mas_us_rifle\sounds\mp5_s1", 1, 1, 130};
@@ -289,34 +286,23 @@ class CfgWeapons
 	class arifle_mas_mp5sd: SMG_02_F
 	{
 		jsrs_soundeffect = "JSRS2_Distance_Effects_MP";
-		drySound[]={"\mas_us_rifle\sounds\mp5_dry", 1, 1, 20};
-		reloadMagazineSound[]={"\mas_us_rifle\sounds\mp5_reload", 1, 1, 30};
 		class Single: Mode_SemiAuto
 		{
 			begin1[]={"A3\sounds_f\weapons\silenced\silent-07", 1, 1, 130};
 			begin2[]={"A3\sounds_f\weapons\silenced\silent-08", 1, 1, 130};
 			soundBegin[]={"begin1", 0.5, "begin2", 0.5};
-			closure1[]={"A3\sounds_f\weapons\closure\closure_handgun_4", 1, 1, 130};
-			closure2[]={"A3\sounds_f\weapons\closure\closure_handgun_5", 1, 1, 130};
-			soundClosure[]={"closure1", 0.5, "closure2", 0.5};
 		};
 		class Burst: Mode_Burst
 		{
 			begin1[]={"A3\sounds_f\weapons\silenced\silent-07", 1, 1, 130};
 			begin2[]={"A3\sounds_f\weapons\silenced\silent-08", 1, 1, 130};
 			soundBegin[]={"begin1", 0.5, "begin2", 0.5};
-			closure1[]={"A3\sounds_f\weapons\closure\closure_handgun_4", 1, 1, 130};
-			closure2[]={"A3\sounds_f\weapons\closure\closure_handgun_5", 1, 1, 130};
-			soundClosure[]={"closure1", 0.5, "closure2", 0.5};
 		};
 		class FullAuto: Mode_FullAuto
 		{
 			begin1[]={"A3\sounds_f\weapons\silenced\silent-07", 1, 1, 130};
 			begin2[]={"A3\sounds_f\weapons\silenced\silent-08", 1, 1, 130};
 			soundBegin[]={"begin1", 0.5, "begin2", 0.5};
-			closure1[]={"A3\sounds_f\weapons\closure\closure_handgun_4", 1, 1, 130};
-			closure2[]={"A3\sounds_f\weapons\closure\closure_handgun_5", 1, 1, 130};
-			soundClosure[]={"closure1", 0.5, "closure2", 0.5};
 		};
 	};
 	class srifle_mas_m107: srifle_GM6_F
