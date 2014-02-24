@@ -342,3 +342,17 @@ if ("caf_rpg7" in (weapons _unit)) then {
 	_unit addItemToBackpack "caf_og7";
 	_unit addItemToBackpack "caf_og7";
 };
+// does the unit have a AA launcher?
+if ("caf_Strela" in (weapons _unit)) then {
+	// remove the backpack and replace it with
+	// a backpack with AA ammo
+	removeBackpack _unit ;
+	_unit addBackpack "B_TacticalPack_oli";
+
+	_unit removeWeapon "caf_Strela";
+	_unit addMagazine "caf_AA_rocket";
+	_unit addWeapon "caf_Strela";
+
+	_unit addItemToBackpack "CAF_AA_rocket";
+	_unit addItemToBackpack "CAF_AA_rocket";
+};
