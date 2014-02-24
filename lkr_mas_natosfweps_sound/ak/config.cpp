@@ -34,8 +34,6 @@ class CfgWeapons
 	{
 		
 		jsrs_soundeffect = "JSRS2_Distance_Effects_Ak74";
-		drySound[]={"\mas_ru_rifle\sounds\ak74_dry", 1, 1, 20};
-		reloadMagazineSound[]={"\mas_ru_rifle\sounds\ak74_reload", 0.63095701, 1, 30};
 		class Single: Mode_SemiAuto
 		{
 			begin1[]={"\mas_ru_rifle\sounds\ak74_s1", 1, 1, 130};
@@ -56,9 +54,7 @@ class CfgWeapons
 	class arifle_Katiba_GL_F;
 	class arifle_mas_ak_74m_gl: arifle_Katiba_GL_F
 	{
-	jsrs_soundeffect = "JSRS2_Distance_Effects_Ak74";
-    drySound[]={"\mas_ru_rifle\sounds\ak74_dry", 1, 1, 20};
-		reloadMagazineSound[]={"\mas_ru_rifle\sounds\ak74_reload", 0.63095701, 1, 30};
+		jsrs_soundeffect = "JSRS2_Distance_Effects_Ak74";
 		class Single: Mode_SemiAuto
 		{
 			begin1[]={"\mas_ru_rifle\sounds\ak74_s1", 1, 1, 130};
@@ -79,8 +75,6 @@ class CfgWeapons
 	class arifle_mas_akms: arifle_mas_ak_74m
 	{
 		jsrs_soundeffect = "JSRS2_Distance_Effects_Ak47";
-		drySound[]={"\mas_ru_rifle\sounds\ak74_dry", 1, 1, 20};
-		reloadMagazineSound[]={"\mas_ru_rifle\sounds\ak74_reload", 0.63095701, 1, 30};
 		class Single: Mode_SemiAuto
 		{
 			begin1[]={"\mas_ru_rifle\sounds\akm_s1", 1, 1, 130};
@@ -101,9 +95,6 @@ class CfgWeapons
 	class arifle_mas_akms_gl: arifle_mas_ak_74m_gl
 	{
 		jsrs_soundeffect = "JSRS2_Distance_Effects_Ak47";
-		drySound[]={"\mas_ru_rifle\sounds\ak74_dry", 1, 1, 20};
-		reloadMagazineSound[]={"\mas_ru_rifle\sounds\ak74_reload", 0.63095701, 1, 30};
-		
 		class Single: Mode_SemiAuto
 		{
 			begin1[]={"\mas_ru_rifle\sounds\akm_s1", 1, 1, 130};
@@ -123,8 +114,7 @@ class CfgWeapons
 	};
 	class srifle_mas_svd: srifle_EBR_F
 	{
-	jsrs_soundeffect = "JSRS2_Distance_Effects_SVD";
-    reloadMagazineSound[]={"A3\sounds_f\weapons\reloads\new_ebr", 0.63095701, 1, 35};
+		jsrs_soundeffect = "JSRS2_Distance_Effects_SVD";
 		class Single: Mode_SemiAuto
 		{
 			begin1[]={"\mas_ru_rifle\sounds\svd_s1", 0.8, 1, 130};
@@ -185,8 +175,6 @@ class CfgWeapons
 	class arifle_mas_aks74u: arifle_Katiba_F
 	{
 		jsrs_soundeffect = "JSRS2_Distance_Effects_Ak74";
-		drySound[]={"\mas_ru_rifle\sounds\ak74_dry", 1,	1, 20};
-		reloadMagazineSound[]={"\mas_ru_rifle\sounds\ak74_reload", 0.63095701, 1, 30};
 		class Single: Mode_SemiAuto
 		{
 			begin1[]={"\mas_ru_rifle\sounds\AK74U_s1", 1, 1, 130};
