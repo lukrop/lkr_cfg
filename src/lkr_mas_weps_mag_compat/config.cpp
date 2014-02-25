@@ -6,14 +6,13 @@ a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, Calif
 
 class CfgPatches
 {
-	class lkr_mas_natosfweps_mag_compat
+	class lkr_mas_weps_mag_compat
 	{
 		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"A3_Weapons_F",
 			"mas_weapons",
 			"mas_weapons_m4"
 		};
