@@ -10,12 +10,11 @@ class CfgPatches
 	{
 		units[]={};
 		weapons[]={};
-		magazines[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"A3_Weapons_F",
-			"SUD_RUSSIANS"
+			"lkr_sud_russians_jsrs",
+			"mas_weapons_ak"
 		};
 	};
 };
@@ -28,188 +27,181 @@ class CfgWeapons
 	class Rifle_Long_Base_F;
 	class arifle_SUD_AKMS: Rifle_Base_F
 	{
-		jsrs_soundeffect = "JSRS2_Distance_Effects_Ak47";
 		class FullAuto: Mode_FullAuto
 		{
-			begin1[] = {"JSRS2_Khaybar\Khaybar_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_Khaybar\Khaybar_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_Khaybar\Khaybar_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_Khaybar\Khaybar_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\akm_s1", 1, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\akm_s2", 1, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\akm_s3", 1, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\akm_s4", 1, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 		class Single: Mode_SemiAuto
 		{
-			begin1[] = {"JSRS2_Khaybar\Khaybar_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_Khaybar\Khaybar_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_Khaybar\Khaybar_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_Khaybar\Khaybar_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\akm_s1", 1, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\akm_s2", 1, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\akm_s3", 1, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\akm_s4", 1, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 	};
 	class arifle_SUD_AK74M: Rifle_Base_F
 	{
-		jsrs_soundeffect = "JSRS2_Distance_Effects_Ak74";
 		class FullAuto: Mode_FullAuto
 		{
-			begin1[] = {"JSRS2_Khaybar\Khaybar_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_Khaybar\Khaybar_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_Khaybar\Khaybar_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_Khaybar\Khaybar_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\ak74_s1", 1, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\ak74_s2", 1, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\ak74_s3", 1, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\ak74_s4", 1, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 		class Single: Mode_SemiAuto
 		{
-			begin1[] = {"JSRS2_Khaybar\Khaybar_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_Khaybar\Khaybar_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_Khaybar\Khaybar_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_Khaybar\Khaybar_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\ak74_s1", 1, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\ak74_s2", 1, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\ak74_s3", 1, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\ak74_s4", 1, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 	};
 	class arifle_SUD_AK105: Rifle_Base_F
 	{
-		jsrs_soundeffect = "JSRS2_Distance_Effects_kaybhar";
 		class FullAuto: Mode_FullAuto
 		{
-			begin1[] = {"JSRS2_Khaybar\Khaybar_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_Khaybar\Khaybar_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_Khaybar\Khaybar_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_Khaybar\Khaybar_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\ak74_s1", 1, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\ak74_s2", 1, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\ak74_s3", 1, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\ak74_s4", 1, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 		class Burst: Mode_Burst
 		{
-			begin1[] = {"JSRS2_Khaybar\Khaybar_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_Khaybar\Khaybar_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_Khaybar\Khaybar_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_Khaybar\Khaybar_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\ak74_s1", 1, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\ak74_s2", 1, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\ak74_s3", 1, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\ak74_s4", 1, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 		class Single: Mode_SemiAuto
 		{
-			begin1[] = {"JSRS2_Khaybar\Khaybar_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_Khaybar\Khaybar_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_Khaybar\Khaybar_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_Khaybar\Khaybar_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\ak74_s1", 1, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\ak74_s2", 1, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\ak74_s3", 1, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\ak74_s4", 1, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 	};
 	class arifle_SUD_AK107: Rifle_Base_F
 	{
-		jsrs_soundeffect = "JSRS2_Distance_Effects_kaybhar";
 		class FullAuto: Mode_FullAuto
 		{
-			begin1[] = {"JSRS2_Khaybar\Khaybar_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_Khaybar\Khaybar_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_Khaybar\Khaybar_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_Khaybar\Khaybar_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\ak74_s1", 1, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\ak74_s2", 1, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\ak74_s3", 1, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\ak74_s4", 1, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 		class Burst: Mode_Burst
 		{
-			begin1[] = {"JSRS2_Khaybar\Khaybar_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_Khaybar\Khaybar_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_Khaybar\Khaybar_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_Khaybar\Khaybar_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\ak74_s1", 1, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\ak74_s2", 1, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\ak74_s3", 1, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\ak74_s4", 1, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 		class Single: Mode_SemiAuto
 		{
-			begin1[] = {"JSRS2_Khaybar\Khaybar_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_Khaybar\Khaybar_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_Khaybar\Khaybar_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_Khaybar\Khaybar_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\ak74_s1", 1, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\ak74_s2", 1, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\ak74_s3", 1, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\ak74_s4", 1, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 	};
 	class LMG_SUD_RPK107: Rifle_Long_Base_F
 	{
-		 jsrs_soundeffect = "JSRS2_Distance_Effects_RPK";
 		class Full: Mode_FullAuto
 		{
-			begin1[] = {"JSRS2_FS2000\FS2000_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_FS2000\FS2000_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_FS2000\FS2000_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_FS2000\FS2000_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\rpk_s1", 1, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\rpk_s2", 1, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\rpk_s3", 1, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\rpk_s4", 1, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 		class Single: Mode_SemiAuto
 		{
-			begin1[] = {"JSRS2_FS2000\FS2000_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_FS2000\FS2000_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_FS2000\FS2000_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_FS2000\FS2000_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\rpk_s1", 1, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\rpk_s2", 1, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\rpk_s3", 1, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\rpk_s4", 1, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 	};
 	class LMG_SUD_Pecheneg_M: Rifle_Long_Base_F
 	{
-		jsrs_soundeffect = "JSRS2_Distance_Effects_PK";
 		class Single: Mode_SemiAuto
 		{
-			begin1[] = {"JSRS2_Zafir\Zafir_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_Zafir\Zafir_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_Zafir\Zafir_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_Zafir\Zafir_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\pkm_s1", 1, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\pkm_s2", 1, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\pkm_s3", 1, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\pkm_s4", 1, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			begin1[] = {"JSRS2_Zafir\Zafir_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_Zafir\Zafir_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_Zafir\Zafir_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_Zafir\Zafir_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\pkm_s1", 1, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\pkm_s2", 1, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\pkm_s3", 1, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\pkm_s4", 1, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 	};
 	class srifle_SUD_SVD: Rifle_Long_Base_F
 	{
-		 jsrs_soundeffect = "JSRS2_Distance_Effects_SVD";
 		class Single: Mode_SemiAuto
 		{
-			begin1[] = {"JSRS2_EBR\EBR_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_EBR\EBR_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_EBR\EBR_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_EBR\EBR_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\svd_s1", 0.8, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\svd_s2", 0.8, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\svd_3", 0.8, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\svd_4", 0.8, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			begin1[] = {"JSRS2_EBR\EBR_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_EBR\EBR_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_EBR\EBR_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_EBR\EBR_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\svd_s1", 0.8, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\svd_s2", 0.8, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\svd_3", 0.8, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\svd_4", 0.8, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 	};
 	class srifle_SUD_SVU107: Rifle_Long_Base_F
 	{
-		jsrs_soundeffect = "JSRS2_Distance_Effects_SVD";
 		class Single: Mode_SemiAuto
 		{
-			begin1[] = {"JSRS2_EBR\EBR_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_EBR\EBR_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_EBR\EBR_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_EBR\EBR_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\svd_s1", 0.8, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\svd_s2", 0.8, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\svd_3", 0.8, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\svd_4", 0.8, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			begin1[] = {"JSRS2_EBR\EBR_s1", 1, 1, 130};
-			begin2[] = {"JSRS2_EBR\EBR_s2", 1, 1, 130};
-			begin3[] = {"JSRS2_EBR\EBR_s3", 1, 1, 130};
-			begin4[] = {"JSRS2_EBR\EBR_s4", 1, 1, 130};
-			soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+			begin1[]={"\mas_ru_rifle\sounds\svd_s1", 0.8, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\svd_s2", 0.8, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\svd_3", 0.8, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\svd_4", 0.8, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 	};
 	class SUD_KSVK_Base: Rifle_Long_Base_F
 	{
-		jsrs_soundeffect = "JSRS2_Distance_Effects_BigSniper";
 		class Single: Mode_SemiAuto
 		{
-			begin1[]={"A3\Sounds_F\weapons\GM6Lynx\gm6_st_1c", 1.12202, 1, 130};
-			begin2[]={"A3\Sounds_F\weapons\GM6Lynx\gm6_st_1d", 1.12202, 1, 130};
-			soundBegin[]={"begin1", 0.5, "begin2", 0.5};
+			begin1[]={"\mas_ru_rifle\sounds\ksvk_s1", 1, 1, 130};
+			begin2[]={"\mas_ru_rifle\sounds\ksvk_s2", 1, 1, 130};
+			begin3[]={"\mas_ru_rifle\sounds\ksvk_s3", 1, 1, 130};
+			begin4[]={"\mas_ru_rifle\sounds\ksvk_s4", 1, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 	};
 };
