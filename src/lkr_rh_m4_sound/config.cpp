@@ -108,6 +108,7 @@ class CfgWeapons
 			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 	};
+	class RH_M4_ris;
 	class RH_M16A4: RH_M4_ris
 	{
 		class Single: Mode_SemiAuto
