@@ -10,12 +10,10 @@ class CfgPatches
 	{
 		units[]={};
 		weapons[]={};
-		magazines[]={};
-		requiredVersion=1.0;
+		requiredVersion=0.1;
 		requiredAddons[]=
 		{
 			"RHARD_MK18_Mod1",
-			"mas_weapons",
 			"mas_weapons_m4"
 		};
 	};

@@ -9,7 +9,6 @@ class CfgPatches
 	{
 		units[]={};
 		weapons[]={};
-		magazines[]={};
 		requiredVersion=0.1;
 		requiredAddons[]={
 			"caf_taliban_c"

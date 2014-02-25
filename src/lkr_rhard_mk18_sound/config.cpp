@@ -10,12 +10,10 @@ class CfgPatches
 	{
 		units[]={};
 		weapons[]={};
-		magazines[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"RHARD_MK18_Mod1",
-			"mas_weapons",
+			"lkr_rhard_mk18_jsrs",
 			"mas_weapons_m4"
 		};
 	};
@@ -28,21 +26,20 @@ class CfgWeapons
 	class Rifle_Base_F;
 	class RHARD_MK18_base_F: Rifle_Base_F
 	{
-		jsrs_soundeffect = "JSRS2_Distance_Effects_M4";
 		class Single: Mode_SemiAuto
 		{
-			begin1[]={"\mas_us_rifle\sounds\m4_s1", 1, 1,	130};
-			begin2[]={"\mas_us_rifle\sounds\m4_s2", 1, 1,	130};
-			begin3[]={"\mas_us_rifle\sounds\m4_s3", 1, 1,	130};
-			begin4[]={"\mas_us_rifle\sounds\m4_s4", 1, 1,	130};
+			begin1[]={"\mas_us_rifle\sounds\m4_s1", 1, 1, 130};
+			begin2[]={"\mas_us_rifle\sounds\m4_s2", 1, 1, 130};
+			begin3[]={"\mas_us_rifle\sounds\m4_s3", 1, 1, 130};
+			begin4[]={"\mas_us_rifle\sounds\m4_s4", 1, 1, 130};
 			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			begin1[]={"\mas_us_rifle\sounds\m4_s1", 1, 1,	130};
-			begin2[]={"\mas_us_rifle\sounds\m4_s2", 1, 1,	130};
-			begin3[]={"\mas_us_rifle\sounds\m4_s3", 1, 1,	130};
-			begin4[]={"\mas_us_rifle\sounds\m4_s4", 1, 1,	130};
+			begin1[]={"\mas_us_rifle\sounds\m4_s1", 1, 1, 130};
+			begin2[]={"\mas_us_rifle\sounds\m4_s2", 1, 1, 130};
+			begin3[]={"\mas_us_rifle\sounds\m4_s3", 1, 1, 130};
+			begin4[]={"\mas_us_rifle\sounds\m4_s4", 1, 1, 130};
 			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 	};

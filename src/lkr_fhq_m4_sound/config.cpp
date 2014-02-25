@@ -10,7 +10,7 @@ class CfgPatches
 	{
 		units[]={};
 		weapons[]={};
-		requiredVersion=1.0;
+		requiredVersion=0.1;
 		requiredAddons[]=
 		{
 			"lkr_fhq_m4_jsrs",

@@ -6,16 +6,17 @@ a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, Calif
 
 class CfgPatches
 {
-	class lkr_mas_natosfweps_sound
+	class lkr_mas_natosfweps_jsrs
 	{
 		units[]={};
 		weapons[]={};
-		magazines[]={};
-		requiredVersion=1.0;
+		requiredVersion=0.1;
 		requiredAddons[]=
 		{
 			"A3_Weapons_F",
-			"mas_weapons"
+			"mas_weapons",
+			"mas_weapons_m4",
+			"mas_weapons_ak"
 		};
 	};
 };
@@ -118,18 +119,18 @@ class CfgWeapons
 		jsrs_soundeffect = "JSRS2_Distance_Effects_M4";
 		class Single: Mode_SemiAuto
 		{
-			begin1[]={"\mas_us_rifle\sounds\m4_s1", 1, 1,	130};
-			begin2[]={"\mas_us_rifle\sounds\m4_s2", 1, 1,	130};
-			begin3[]={"\mas_us_rifle\sounds\m4_s3", 1, 1,	130};
-			begin4[]={"\mas_us_rifle\sounds\m4_s4", 1, 1,	130};
+			begin1[]={"\mas_us_rifle\sounds\m4_s1", 1, 1, 130};
+			begin2[]={"\mas_us_rifle\sounds\m4_s2", 1, 1, 130};
+			begin3[]={"\mas_us_rifle\sounds\m4_s3", 1, 1, 130};
+			begin4[]={"\mas_us_rifle\sounds\m4_s4", 1, 1, 130};
 			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			begin1[]={"\mas_us_rifle\sounds\m4_s1", 1, 1,	130};
-			begin2[]={"\mas_us_rifle\sounds\m4_s2", 1, 1,	130};
-			begin3[]={"\mas_us_rifle\sounds\m4_s3", 1, 1,	130};
-			begin4[]={"\mas_us_rifle\sounds\m4_s4", 1, 1,	130};
+			begin1[]={"\mas_us_rifle\sounds\m4_s1", 1, 1, 130};
+			begin2[]={"\mas_us_rifle\sounds\m4_s2", 1, 1, 130};
+			begin3[]={"\mas_us_rifle\sounds\m4_s3", 1, 1, 130};
+			begin4[]={"\mas_us_rifle\sounds\m4_s4", 1, 1, 130};
 			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
 	};

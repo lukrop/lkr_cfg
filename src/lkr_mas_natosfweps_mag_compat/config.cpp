@@ -10,12 +10,12 @@ class CfgPatches
 	{
 		units[]={};
 		weapons[]={};
-		magazines[]={};
-		requiredVersion=1.0;
+		requiredVersion=0.1;
 		requiredAddons[]=
 		{
 			"A3_Weapons_F",
-			"mas_weapons"
+			"mas_weapons",
+			"mas_weapons_m4"
 		};
 	};
 };
@@ -31,7 +31,7 @@ class CfgWeapons
 			"30Rnd_556x45_Stanag_Tracer_Green",
 			"30Rnd_556x45_Stanag_Tracer_Yellow",
 			"30Rnd_mas_556x45_Stanag",
-			"30Rnd_mas_556x45_T_Stanag",
+			"30Rnd_mas_556x45_T_Stanag"
 			//"20Rnd_556x45_UW_mag"
 		};
 	};
@@ -45,7 +45,7 @@ class CfgWeapons
 			"30Rnd_556x45_Stanag_Tracer_Green",
 			"30Rnd_556x45_Stanag_Tracer_Yellow",
 			"30Rnd_mas_556x45_Stanag",
-			"30Rnd_mas_556x45_T_Stanag",
+			"30Rnd_mas_556x45_T_Stanag"
 			//"20Rnd_556x45_UW_mag"
 		};
 	};

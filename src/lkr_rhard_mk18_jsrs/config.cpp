@@ -6,14 +6,14 @@ a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, Calif
 
 class CfgPatches
 {
-	class lkr_fhq_m4_jsrs
+	class lkr_rhard_mk18_jsrs
 	{
 		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"FHQ_M4_M4A1"
+			"RHARD_MK18_Mod1"
 		};
 	};
 };
@@ -23,22 +23,20 @@ class Mode_FullAuto;
 class CfgWeapons
 {
 	class Rifle_Base_F;
-	class FHQ_M4A1_BASE: Rifle_Base_F
+	class RHARD_MK18_base_F: Rifle_Base_F
 	{
 		jsrs_soundeffect = "JSRS2_Distance_Effects_M4";
 		class Single: Mode_SemiAuto
 		{
-			begin1[]={"\FHQ_M4_A3\M4A1\sfx\M4_single", 1.5220186, 1, 130};
-			begin2[]={"\FHQ_M4_A3\M4A1\sfx\M4_single", 1.5220186, 1, 130};
-			begin3[]={"\FHQ_M4_A3\M4A1\sfx\M4_single", 1.5220186, 1, 130};
-			soundBegin[]={"begin1", 0.33000001, "begin2", 0.33000001, "begin3", 0.34};
+			begin1[]={"A3\sounds_f\weapons\MX\mx-st-full-1", 1.41254, 1, 130};
+			begin2[]={"A3\sounds_f\weapons\MX\mx-st-full-2", 1.41254, 1, 130};
+			soundBegin[]={"begin1", 0.5, "begin2", 0.5};
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			begin1[]={"\FHQ_M4_A3\M4A1\sfx\M4_auto", 1.5, 1, 130};
-			begin2[]={"\FHQ_M4_A3\M4A1\sfx\M4_auto", 1.5, 1, 130};
-			begin3[]={"\FHQ_M4_A3\M4A1\sfx\M4_auto", 1.5, 1, 130};
-			soundBegin[]={"begin1", 0.33000001, "begin2", 0.33000001, "begin3", 0.34};
+			begin1[]={"A3\sounds_f\weapons\MX\mx-st-full-1", 1.41254, 1, 130};
+			begin2[]={"A3\sounds_f\weapons\MX\mx-st-full-2", 1.41254, 1, 130};
+			soundBegin[]={"begin1", 0.5, "begin2", 0.5};
 		};
 	};
 };
