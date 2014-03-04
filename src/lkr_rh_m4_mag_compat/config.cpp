@@ -33,7 +33,8 @@ class CfgWeapons
 			"30Rnd_556x45_Stanag_Tracer_Green",
 			"30Rnd_556x45_Stanag_Tracer_Yellow",
 			"30Rnd_mas_556x45_Stanag",
-			"30Rnd_mas_556x45_T_Stanag"
+			"30Rnd_mas_556x45_T_Stanag",
+			"RH_30Rnd_556x45_Mk262"
 		};
 	};
 };
