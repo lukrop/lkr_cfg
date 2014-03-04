@@ -39,12 +39,18 @@ class asdg_OpticRail1913_short;
 
 class CfgWeapons
 {
-	class Rifle_Base_F;
-	class Rifle_Long_Base_F;
+	class Rifle;
+	class Rifle_Base_F : Rifle {
+		class WeaponSlotsInfo;
+	};
+
+	class Rifle_Long_Base_F : Rifle_Base_F {
+		class WeaponSlotsInfo;
+	};
 	
 	class arifle_SUD_AKMS: Rifle_Base_F
 	{
-		class WeaponSlotsInfo
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class asdg_FrontSideRail_SUD_AK: asdg_FrontSideRail {};
 			class asdg_OpticRail_SUD_AK: asdg_OpticSideMount {};
@@ -52,7 +58,7 @@ class CfgWeapons
 	};
 	class arifle_SUD_AK74M: Rifle_Base_F
 	{
-		class WeaponSlotsInfo
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class asdg_FrontSideRail_SUD_AK: asdg_FrontSideRail {};
 			class asdg_OpticRail_SUD_AK: asdg_OpticSideMount {};
@@ -60,7 +66,7 @@ class CfgWeapons
 	};
 	class arifle_SUD_AK105: Rifle_Base_F
 	{
-		class WeaponSlotsInfo
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class asdg_FrontSideRail_SUD_AK105: asdg_FrontSideRail {};
 			class asdg_OpticRail_SUD_AK105: asdg_OpticRail1913 {};
@@ -68,7 +74,7 @@ class CfgWeapons
 	};
 	class arifle_SUD_AK107: Rifle_Base_F
 	{
-		class WeaponSlotsInfo
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class asdg_FrontSideRail_SUD_AK105: asdg_FrontSideRail {};
 			class asdg_OpticRail_SUD_AK105: asdg_OpticRail1913 {};
@@ -77,7 +83,7 @@ class CfgWeapons
 	
 	class LMG_SUD_RPK107: Rifle_Long_Base_F
 	{
-		class WeaponSlotsInfo
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class asdg_FrontSideRail_SUD_AK105: asdg_FrontSideRail {};
 			class asdg_OpticRail_SUD_AK105: asdg_OpticRail1913 {};
@@ -85,7 +91,7 @@ class CfgWeapons
 	};
 	class LMG_SUD_Pecheneg_M: Rifle_Long_Base_F
 	{
-		class WeaponSlotsInfo
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class asdg_FrontSideRail_SUD_Pecheneg: asdg_FrontSideRail {};
 			class asdg_OpticRail_SUD_Pecheneg: asdg_OpticRail1913_short {};
@@ -94,7 +100,7 @@ class CfgWeapons
 	
 	class srifle_SUD_SVU107: Rifle_Long_Base_F
 	{
-		class WeaponSlotsInfo
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class asdg_FrontSideRail_SUD_SVU107: asdg_FrontSideRail {};
 			class asdg_OpticRail_SUD_SVU107: asdg_OpticRail1913 {};
