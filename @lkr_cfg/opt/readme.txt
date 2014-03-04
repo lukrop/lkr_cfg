@@ -1,0 +1,1 @@
+I highly recommend you to use lkr_ammo instead of these magazine compatiblity mods.
