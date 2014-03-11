@@ -127,6 +127,14 @@ class CfgWeapons
 			begin4[]={"\mas_us_rifle\sounds\m16_s4", 0.9, 1, 130};
 			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
 		};
+		class FullAuto: Mode_FullAuto
+		{
+			begin1[]={"\mas_us_rifle\sounds\m16_s1", 0.9, 1, 130};
+			begin2[]={"\mas_us_rifle\sounds\m16_s2", 0.9, 1, 130};
+			begin3[]={"\mas_us_rifle\sounds\m16_s3", 0.9, 1, 130};
+			begin4[]={"\mas_us_rifle\sounds\m16_s4", 0.9, 1, 130};
+			soundBegin[]={"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+		};
 	};
 	class RH_Mk12mod1: RH_M16A4
 	{

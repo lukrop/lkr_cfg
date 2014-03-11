@@ -100,6 +100,11 @@ class CfgWeapons
 			begin1[]={"\RH_m4\sound\m16_fire1", 1.7782789, 1, 130};
 			begin2[]={"\RH_m4\sound\m16_fire2", 1.7782789, 1, 130};
 		};
+		class FullAuto: Mode_FullAuto
+		{
+			begin1[]={"\RH_m4\sound\m16a1_fire1", 1.4125376, 1, 130};
+			begin2[]={"\RH_m4\sound\m16a1_fire2", 1.4125376, 1.2, 130};
+		};
 	};
 	class RH_Mk12mod1: RH_M16A4
 	{
