@@ -104,14 +104,14 @@ class CfgVehicles
 			"HandGrenade",
 			"HandGrenade",
 			"HandGrenade",
-			"1Rnd_HE_M203",
-			"1Rnd_HE_M203",
-			"1Rnd_HE_M203",
-			"1Rnd_HE_M203",
-			"1Rnd_HE_M203",
-			"1Rnd_HE_M203",
-			"1Rnd_HE_M203",
-			"1Rnd_HE_M203"
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell"
 		};
 		respawnMagazines[]=
 		{
@@ -119,10 +119,22 @@ class CfgVehicles
 			"30Rnd_556x45_Stanag",
 			"30Rnd_556x45_Stanag",
 			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
 			"HandGrenade",
 			"HandGrenade",
-			"1Rnd_HE_M203",
-			"1Rnd_HE_M203"
+			"HandGrenade",
+			"HandGrenade",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell"
+
 		};
 	};
 
@@ -180,6 +192,7 @@ class CfgVehicles
 			"30Rnd_556x45_Stanag",
 			"30Rnd_556x45_Stanag",
 			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
 			"HandGrenade",
 			"HandGrenade",
 			"HandGrenade",
@@ -221,18 +234,19 @@ class CfgVehicles
 			"30Rnd_556x45_Stanag",
 			"30Rnd_556x45_Stanag",
 			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
 			"HandGrenade",
 			"HandGrenade",
 			"HandGrenade",
 			"HandGrenade",
-			"1Rnd_HE_M203",
-			"1Rnd_HE_M203",
-			"1Rnd_HE_M203",
-			"1Rnd_HE_M203",
-			"1Rnd_HE_M203",
-			"1Rnd_HE_M203",
-			"1Rnd_HE_M203",
-			"1Rnd_HE_M203"
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell"
 		};
 		respawnMagazines[]=
 		{
@@ -240,10 +254,21 @@ class CfgVehicles
 			"30Rnd_556x45_Stanag",
 			"30Rnd_556x45_Stanag",
 			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
+			"30Rnd_556x45_Stanag",
 			"HandGrenade",
 			"HandGrenade",
-			"1Rnd_HE_M203",
-			"1Rnd_HE_M203"
+			"HandGrenade",
+			"HandGrenade",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell"
 		};
 	};
 
